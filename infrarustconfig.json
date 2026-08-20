@@ -30,5 +30,18 @@
         "Order": 2,
         "ParamFieldName": "WebPort",
         "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Web API Key",
+        "Category": "InfraRust:stadia_controller",
+        "Subcategory": "Web:public:2",
+        "Description": "Authentication key for the InfraRust web API. Must be at least 16 characters.",
+        "Keywords": "api,key,password,web,security",
+        "FieldName": "WebApiKey",
+        "InputType": "Password",
+        "MaxLength": 38,
+        "Required": true,
+        "ParamFieldName": "WebApiKey",
+        "DefaultValue": "{{newguid()}}"
     }
 ]

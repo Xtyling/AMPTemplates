@@ -38,7 +38,7 @@
     {
         "UpdateStageName": "Plugin Directory",
         "UpdateStageDescription": "Creates /plugins",
-        "UpdateSourcePlatform": "All",
+        "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateDirectory",
         "UpdateSourceArgs": "./infrarust/serverfiles/plugins"
     }
