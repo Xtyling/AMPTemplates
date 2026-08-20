@@ -35,8 +35,10 @@
         "UpdateStageDescription": "Creating the initial InfraRust configuration file for AMP",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateFile",
+        "UpdateSourceData": "# This file is managed by AMP.",
         "UpdateSourceArgs": "{{$FullBaseDir}}infrarust.toml",
-        "OverwriteExistingFiles": false
+        "OverwriteExistingFiles": false,
+        "SkipOnFailure": false
     },
     {
         "UpdateStageName": "Server Directory",
