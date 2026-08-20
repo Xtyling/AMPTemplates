@@ -3,9 +3,9 @@
         "UpdateStageName": "Download InfraRust",
         "UpdateStageDescription": "Downloading InfraRust",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "infrarust",
-        "UpdateSourceArgs": "Shadowner/Infrarust",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://github.com/Shadowner/Infrarust/releases/latest/download/infrarust",
+        "UpdateSourceArgs": "infrarust",
         "UpdateSourceTarget": "serverfiles",
         "OverwriteExistingFiles": true
     },
