@@ -3,11 +3,14 @@
         "UpdateStageName": "Download InfraRust",
         "UpdateStageDescription": "Downloading InfraRust",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://github.com/Shadowner/Infrarust/releases/download/v2.0.0-beta.1/infrarust",
-        "UpdateSourceArgs": "infrarust",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "infrarust-linux-x86_64.tar.gz",
+        "UpdateSourceArgs": "Shadowner/Infrarust",
+        "UpdateSourceVersion": "v2.0.0-beta.1",
         "UpdateSourceTarget": "serverfiles",
-        "OverwriteExistingFiles": true
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": true,
+        "DeleteAfterExtract": true
     },
     {
         "UpdateStageName": "Make InfraRust Executable",
