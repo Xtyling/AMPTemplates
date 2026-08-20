@@ -1,1 +1,34 @@
-[]
+[
+    {
+        "DisplayName": "Game Port",
+        "Category": "InfraRust:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "Minecraft proxy port assigned by AMP",
+        "Keywords": "game,port,minecraft,proxy",
+        "FieldName": "$GamePort",
+        "InputType": "number",
+        "MinValue": 1,
+        "MaxValue": 65535,
+        "MultipleOf": 1,
+        "Multiplier": 1,
+        "Order": 1,
+        "ParamFieldName": "GamePort",
+        "DefaultValue": ""
+    },
+    {
+        "DisplayName": "Web Port",
+        "Category": "InfraRust:stadia_controller",
+        "Subcategory": "Server:dns:1",
+        "Description": "InfraRust web API port assigned by AMP",
+        "Keywords": "web,api,port",
+        "FieldName": "$WebPort",
+        "InputType": "number",
+        "MinValue": 1,
+        "MaxValue": 65535,
+        "MultipleOf": 1,
+        "Multiplier": 1,
+        "Order": 2,
+        "ParamFieldName": "WebPort",
+        "DefaultValue": ""
+    }
+]
