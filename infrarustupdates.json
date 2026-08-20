@@ -18,5 +18,13 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SetExecutableFlag",
         "UpdateSourceArgs": "serverfiles/infrarust"
+    },
+    {
+        "UpdateStageName": "Create InfraRust Config",
+        "UpdateStageDescription": "Generating the initial InfraRust configuration",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "CreateFile",
+        "UpdateSourceData": "bind = \"0.0.0.0:25565\" servers_dir = \"./servers\" plugins_dir = \"./plugins\"  [web] bind = \"0.0.0.0:8080\"",
+        "UpdateSourceArgs": "serverfiles/infrarust.toml"
     }
 ]

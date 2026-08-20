@@ -1,6 +1,6 @@
 [
     {
-        "ConfigFile": "infrarust.toml",
+        "ConfigFile": "serverfiles/infrarust.toml",
         "ConfigType": "auto",
         "AutoMap": false,
         "Importable": true
