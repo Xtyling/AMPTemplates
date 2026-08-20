@@ -1,0 +1,19 @@
+[
+    {
+        "UpdateStageName": "Download InfraRust",
+        "UpdateStageDescription": "Downloading InfraRust",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "GithubRelease",
+        "UpdateSourceData": "infrarust",
+        "UpdateSourceArgs": "Shadowner/Infrarust",
+        "UpdateSourceTarget": "serverfiles",
+        "OverwriteExistingFiles": true
+    },
+    {
+        "UpdateStageName": "Make InfraRust Executable",
+        "UpdateStageDescription": "Setting InfraRust executable permission",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "SetExecutableFlag",
+        "UpdateSourceArgs": "serverfiles/infrarust"
+    }
+]

@@ -1,0 +1,8 @@
+[
+    {
+        "ConfigFile": "infrarust.toml",
+        "ConfigType": "auto",
+        "AutoMap": false,
+        "Importable": true
+    }
+]
