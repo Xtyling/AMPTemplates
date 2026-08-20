@@ -20,21 +20,13 @@
         "UpdateSourceArgs": "serverfiles/infrarust"
     },
     {
-        "UpdateStageName": "Create InfraRust Config",
-        "UpdateStageDescription": "Generating the initial InfraRust configuration",
-        "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/infrarust.toml",
-        "UpdateSourceArgs": "infrarust.toml",
-        "UpdateSourceTarget": "serverfiles"
-    },
-    {
         "UpdateStageName": "Download InfraRust Config Template",
+        "UpdateStageDescription": "Downloading the InfraRust configuration template",
         "UpdateSourcePlatform": "All",
-        " UpdateSource": "FetchURL",
+        "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/AMP_infrarust.toml",
         "UpdateSourceArgs": "AMP_infrarust.toml",
-        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "UpdateSourceTarget": "serverfiles",
         "OverwriteExistingFiles": true,
         "SkipOnFailure": false
     },
@@ -43,13 +35,13 @@
         "UpdateStageDescription": "Creates /servers/",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateDirectory",
-        "UpdateSourceArgs": "./infrarust/serverfiles/servers"
+        "UpdateSourceArgs": "serverfiles/servers"
     },
     {
         "UpdateStageName": "Plugin Directory",
         "UpdateStageDescription": "Creates /plugins",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateDirectory",
-        "UpdateSourceArgs": "./infrarust/serverfiles/plugins"
+        "UpdateSourceArgs": "serverfiles/plugins"
     }
 ]

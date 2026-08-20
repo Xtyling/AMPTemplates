@@ -42,7 +42,7 @@
     "Description": "Authentication key for the InfraRust web API. Must be at least 16 characters.",
     "Keywords": "api,key,password,web,security",
     "FieldName": "WebApiKey",
-    "InputType": "Password",
+    "InputType": "password",
     "MaxLength": 38,
     "Required": true,
     "ParamFieldName": "WebApiKey",

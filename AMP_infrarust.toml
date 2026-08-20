@@ -1,8 +1,7 @@
-[
-  {
-    "ConfigFile": "infrarust.toml",
-    "AutoMap": true,
-    "ConfigType": "template",
-    "ConfigFileTemplate": "infrarust/AMP_infrarust.toml"
-  }
-]
+bind = "0.0.0.0:{{$GamePort}}"
+servers_dir = "./servers"
+plugins_dir = "./plugins"
+
+[web]
+bind = "0.0.0.0:{{$WebPort}}"
+api_key = "{{WebApiKey}}"
