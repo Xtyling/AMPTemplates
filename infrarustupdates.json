@@ -26,22 +26,30 @@
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/AMP_infrarust.toml",
         "UpdateSourceArgs": "AMP_infrarust.toml",
-        "UpdateSourceTarget": "serverfiles",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": true,
         "SkipOnFailure": false
+    },
+    {
+        "UpdateStageName": "Create InfraRust Config",
+        "UpdateStageDescription": "Creating the initial InfraRust configuration file for AMP",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "CreateFile",
+        "UpdateSourceArgs": "{{$FullBaseDir}}infrarust.toml",
+        "OverwriteExistingFiles": false
     },
     {
         "UpdateStageName": "Server Directory",
         "UpdateStageDescription": "Creates /servers/",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateDirectory",
-        "UpdateSourceArgs": "serverfiles/servers"
+        "UpdateSourceArgs": "{{$FullBaseDir}}servers"
     },
     {
         "UpdateStageName": "Plugin Directory",
         "UpdateStageDescription": "Creates /plugins",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateDirectory",
-        "UpdateSourceArgs": "serverfiles/plugins"
+        "UpdateSourceArgs": "{{$FullBaseDir}}plugins"
     }
 ]
