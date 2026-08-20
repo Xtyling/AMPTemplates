@@ -25,6 +25,6 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateFile",
         "UpdateSourceData": "bind = \"0.0.0.0:25565\" servers_dir = \"./servers\" plugins_dir = \"./plugins\"  [web] bind = \"0.0.0.0:8080\"",
-        "UpdateSourceArgs": "serverfiles/infrarust.toml"
+        "UpdateSourceArgs": "./infrarust/serverfiles/infrarust.toml"
     }
 ]
