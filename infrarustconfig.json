@@ -34,18 +34,5 @@
     "DefaultValue": "8080",
     "ExcludeFromImport": true,
     "Hidden": true
-  },
-  {
-    "DisplayName": "Web API Key",
-    "Category": "InfraRust:stadia_controller",
-    "Subcategory": "Web:public:2",
-    "Description": "Authentication key for the InfraRust web API. Must be at least 16 characters.",
-    "Keywords": "api,key,password,web,security",
-    "FieldName": "WebApiKey",
-    "InputType": "password",
-    "MaxLength": 38,
-    "Required": true,
-    "ParamFieldName": "WebApiKey",
-    "DefaultValue": "{{newguid()}}"
   }
 ]
