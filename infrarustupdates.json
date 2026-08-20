@@ -27,5 +27,19 @@
         "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/infrarust.toml",
         "UpdateSourceArgs": "infrarust.toml",
         "UpdateSourceTarget": "serverfiles"
+    },
+    {
+        "UpdateStageName": "Server Directory",
+        "UpdateStageDescription": "Creates /servers/",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "./infrarust/serverfiles/servers"
+    },
+    {
+        "UpdateStageName": "Plugin Directory",
+        "UpdateStageDescription": "Creates /plugins",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "./infrarust/serverfiles/plugins"
     }
 ]
