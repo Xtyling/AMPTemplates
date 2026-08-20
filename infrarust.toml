@@ -1,6 +1,7 @@
-bind = "0.0.0.0:25565"
+bind = "0.0.0.0:{{GamePort}}"
 servers_dir = "./servers"
 plugins_dir = "./plugins"
 
 [web]
-bind = "0.0.0.0:8080"
+bind = "0.0.0.0:{{WebPort}}"
+api_key = "{{WebApiKey}}"
