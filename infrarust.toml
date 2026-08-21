@@ -1,7 +1,6 @@
-bind = "0.0.0.0:25566"
+bind = "0.0.0.0:25565"
 servers_dir = "./servers"
 plugins_dir = "./plugins"
 
 [web]
-bind = "0.0.0.0:8086"
-api_key = "change-this-api-key"
+bind = "127.0.0.1:8080"
