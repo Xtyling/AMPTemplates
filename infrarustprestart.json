@@ -4,7 +4,7 @@
     "UpdateStageDescription": "Writing AMP-managed ports and API key to infrarust.toml",
     "UpdateSourcePlatform": "All",
     "UpdateSource": "CreateFile",
-    "UpdateSourceData": "bind = \"0.0.0.0:{{$GamePort}}\"\nservers_dir = \"./servers\"\nplugins_dir = \"./plugins\"\n\n[web]\nbind = \"0.0.0.0:{{$WebPort}}\"\napi_key = \"{{WebApiKey}}\"\n",
+    "UpdateSourceData": "bind = \"0.0.0.0:{{$GamePort}}\"\nservers_dir = \"./servers\"\nplugins_dir = \"./plugins\"\n\n[web]\nbind = \"0.0.0.0:{{$WebPort}}\"\napi_key = \"{{WebApiKey}}\"\n\n[forwarding]\nmode = \"velocity\"\nsecret_file = \"./forwarding.secret\"\n",
     "UpdateSourceArgs": "{{$FullBaseDir}}infrarust.toml",
     "OverwriteExistingFiles": true,
     "SkipOnFailure": false
