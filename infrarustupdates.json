@@ -20,17 +20,6 @@
         "UpdateSourceArgs": "serverfiles/infrarust"
     },
     {
-        "UpdateStageName": "Download InfraRust Config Seed",
-        "UpdateStageDescription": "Downloading the initial InfraRust configuration",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/infrarust.toml",
-        "UpdateSourceArgs": "infrarust.toml",
-        "UpdateSourceTarget": "{{$FullBaseDir}}",
-        "OverwriteExistingFiles": false,
-        "SkipOnFailure": false
-    },
-    {
         "UpdateStageName": "Download InfraRust Config Template",
         "UpdateStageDescription": "Downloading the AMP-managed InfraRust configuration template",
         "UpdateSourcePlatform": "All",

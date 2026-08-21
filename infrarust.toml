@@ -1,6 +1,0 @@
-bind = "0.0.0.0:25565"
-servers_dir = "./servers"
-plugins_dir = "./plugins"
-
-[web]
-bind = "127.0.0.1:8080"
