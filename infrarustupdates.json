@@ -20,17 +20,6 @@
         "UpdateSourceArgs": "serverfiles/infrarust"
     },
     {
-        "UpdateStageName": "Download InfraRust Config Template",
-        "UpdateStageDescription": "Downloading the AMP-managed InfraRust configuration template",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/AMP_infrarust.toml",
-        "UpdateSourceArgs": "AMP_infrarust.toml",
-        "UpdateSourceTarget": "{{$FullBaseDir}}",
-        "OverwriteExistingFiles": true,
-        "SkipOnFailure": false
-    },
-    {
         "UpdateStageName": "Server Directory",
         "UpdateStageDescription": "Creates /servers/",
         "UpdateSourcePlatform": "Linux",
