@@ -1,7 +1,7 @@
 [
     {
         "UpdateStageName": "Download InfraRust",
-        "UpdateStageDescription": "Downloading the perf/intercepted-path InfraRust build",
+        "UpdateStageDescription": "Downloading the Xtyling velocityfix InfraRust build",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/builds/infrarust-perf-intercepted-linux-x86_64.tar.gz",
