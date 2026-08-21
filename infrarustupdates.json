@@ -37,7 +37,7 @@
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/AMP_infrarust.toml",
         "UpdateSourceArgs": "AMP_infrarust.toml",
-        "UpdateSourceTarget": "{{$FullRootDir}}",
+        "UpdateSourceTarget": "{{$FullBaseDir}}",
         "OverwriteExistingFiles": true,
         "SkipOnFailure": false
     },

@@ -3,6 +3,6 @@
     "ConfigFile": "infrarust/serverfiles/infrarust.toml",
     "AutoMap": true,
     "ConfigType": "template",
-    "ConfigFileTemplate": "infrarust/AMP_infrarust.toml"
+    "ConfigFileTemplate": "infrarust/serverfiles/AMP_infrarust.toml"
   }
 ]
