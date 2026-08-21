@@ -32,5 +32,12 @@
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "CreateDirectory",
         "UpdateSourceArgs": "{{$FullBaseDir}}plugins"
+    },
+    {
+        "UpdateStageName": "Admin API Data Directory",
+        "UpdateStageDescription": "Creates the InfraRust Admin API persistence directory",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "CreateDirectory",
+        "UpdateSourceArgs": "{{$FullBaseDir}}plugins/admin_api"
     }
 ]
