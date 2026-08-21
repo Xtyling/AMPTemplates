@@ -1,12 +1,11 @@
 [
     {
         "UpdateStageName": "Download InfraRust",
-        "UpdateStageDescription": "Downloading InfraRust",
+        "UpdateStageDescription": "Downloading the perf/intercepted-path InfraRust build",
         "UpdateSourcePlatform": "Linux",
-        "UpdateSource": "GithubRelease",
-        "UpdateSourceData": "infrarust-linux-x86_64.tar.gz",
-        "UpdateSourceArgs": "Shadowner/Infrarust",
-        "UpdateSourceVersion": "v2.0.0-beta.1",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://raw.githubusercontent.com/Xtyling/AMPTemplates/main/builds/infrarust-perf-intercepted-linux-x86_64.tar.gz",
+        "UpdateSourceArgs": "infrarust-perf-intercepted-linux-x86_64.tar.gz",
         "UpdateSourceTarget": "serverfiles",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
